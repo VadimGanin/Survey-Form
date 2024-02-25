@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Survey Form</title>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <header>
+      <h1 id='title'>freeCodeCamp Survey Form</h1>
+      <p id='description'>Thank you for taking the time to help us improve the platform</p>
+    </header>
+    
+    <form id='survey-form'>
+      <!-- TEXTFIELDS -->
+      <div class='container'>
+        <label for='name' id="name-label">Name
+          <input id='name' type='text' placeholder="Enter your name" class='form-el' required>
+        </label>
+      </div>
+      <div class='container'>
+        <label for='email' id="email-label">Email
+          <input id='email' type='email' placeholder="Enter your email" class='form-el' required>
+        </label>
+      </div>
+      <div class='container'>
+        <label for='number' id="number-label">Age
+          <input id='number' type='number' placeholder="Age" class='form-el' min='1' max='150'>
+        </label>
+      </div>
+
+      <!-- SELECT OPTION -->
+      <div class='container'>
+        <label for="dropdown">
+            What is your favorite feature of freeCodeCamp?
+            <select id="dropdown" class='form-el'>
+              <option>Select an option</option>
+              <option>Challenges</option>
+              <option>Projects</option>
+              <option>Community</option>
+              <option>Open Source</option>
+            </select>
+          </label>
+      </div>
+
+      <!-- RADIO BUTTONS -->
+      <div class='container'>
+        Would you recommend freeCodeCamp to a friend?
+        <div class="radio-button">
+          <input id="definitely" type="radio" checked name='r-button' value='definitely'>
+          <label for="definitely">Definitely</label>
+        </div>
+
+        <div class="radio-button">
+          <input id="maybe" type="radio" name='r-button' value='maybe'>
+          <label for="maybe">Maybe</label>
+        </div>
+        
+        <div class="radio-button">
+          <input id="not-sure" type="radio" name='r-button' value='not-sure'>
+          <label for="not-sure">Not sure</label>
+        </div>
+      </div>
+
+      <!-- CHECKBOXES -->
+      <div class="container">
+        What would you like to see improved?
+        <div class="checkbox">
+          <input type="checkbox" id="front-end" value="front-end">
+          <label for="front-end">Front-end Projects</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="back-end" value="back-end">
+          <label for="back-end">Back-end Projects</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="challenges" value="challenges">
+          <label for="challenges">Challenges</label>
+        </div>
+      </div>
+
+      <!-- TEXTAREA -->
+      <div class="container">
+        Any comments or suggestions?
+        <textarea class="form-el" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <!-- SUBMIT BUTTON -->
+      <div class="container">
+        <input type="submit" value="Submit" id="submit">
+      </div>
+    </form>
+  </body>
+</html>
